@@ -1,0 +1,16 @@
+name: Push workflow
+
+on:
+  push:
+    branches:
+      - master
+      - develop
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Run a one liner
+        run: echo Hello from push-workflow!
