@@ -11,6 +11,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkut@v2
+      - uses: actions/checkout@v2
       - name: Run a one liner
         run: echo Hello from push-workflow!
